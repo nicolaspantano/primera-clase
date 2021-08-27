@@ -1,3 +1,13 @@
+<div class="container">
+  <header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a routerLink="" class="nav-link" aria-current="page">Bienvenido</a></li>
+      <li class="nav-item"><a routerLink="login" class="nav-link">Login</a></li>
+      <li class="nav-item"><a routerLink="error" class="nav-link">Error</a></li>
+    </ul>
+  </header>
+</div>
+
 <div>
 <h4>Edad uno</h4>
 <input type="text" id="edadUno" placeholder="Edad uno" [(ngModel)]="edadUno">
@@ -7,4 +17,8 @@
 <button (click)="limpiar()">Limpiar</button>
 <h4>Promedio</h4>
 <input type="text" id="promedio" [(ngModel)]="promedio" readonly>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
 </div>

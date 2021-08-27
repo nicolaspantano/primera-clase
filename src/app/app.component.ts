@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from './clases/usuario';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ export class AppComponent {
   edadDos='';
   promedio:any;
 
-  
+  miUsuario = new Usuario();
+
   limpiar(){
     this.edadUno='';
     this.edadDos='';
